@@ -40,25 +40,43 @@ const ROLES: Role[] = [
   },
 ]
 
-const HONORS = [
+interface Honor {
+  title: string
+  org: string
+  year: string
+  logo?: string
+}
+
+const HONORS: Honor[] = [
   {
     title: 'Treasurer — IEEE Computational Intelligence Society',
     org: 'MSRIT Chapter',
-    year: '2025–26',
+    year: '2026–27',
   },
   {
     title: 'Global Cohort Leader — Harvard Aspire Leaders Program',
     org: 'Harvard University',
-    year: '2025',
+    year: '2024',
   },
   {
-    title: 'TechFest Head \'26 & Director, Theatrix Dramatics Club',
+    title: 'TechFest Head \'26',
     org: 'MSRIT',
     year: '2026',
   },
   {
+    title: 'Director — Theatrix Dramatics Club',
+    org: 'MSRIT',
+    year: '2026',
+    logo: '/theatrix_logo.png',
+  },
+  {
     title: 'IdeaRise Innovation Challenge Winner',
-    org: '2nd Prize — SAGE Hackathon 2024',
+    org: 'MSRIT',
+    year: '2024',
+  },
+  {
+    title: '2nd Prize Winner — SAGE Hackathon',
+    org: 'SAGE',
     year: '2024',
   },
 ]
@@ -445,19 +463,30 @@ export default function ExperiencePage() {
                     e.currentTarget.style.borderColor = 'rgba(222,219,200,0.06)'
                   }}
                 >
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <h4 className="text-sm font-medium m-0 leading-snug" style={{ color: '#E1E0CC' }}>
-                      {honor.title}
-                    </h4>
-                    <ArrowUpRight
-                      size={13}
-                      color="rgba(222,219,200,0.3)"
-                      className="flex-shrink-0 mt-0.5 group-hover:text-[#DEDBC8] transition-colors duration-200"
-                    />
-                  </div>
-                  <div className="flex items-center justify-between gap-2">
-                    <p className="text-[11px] text-gray-500 m-0">{honor.org}</p>
-                    <span className="text-[10px] text-gray-600 font-mono">{honor.year}</span>
+                  <div className="flex gap-3.5 items-start h-full">
+                    {honor.logo && (
+                      <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-1">
+                        <img src={honor.logo} alt={`${honor.title} Logo`} className="w-full h-full object-contain" />
+                      </div>
+                    )}
+                    <div className="flex-grow min-w-0 flex flex-col justify-between min-h-[40px]">
+                      <div>
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <h4 className="text-sm font-medium m-0 leading-snug" style={{ color: '#E1E0CC' }}>
+                            {honor.title}
+                          </h4>
+                          <ArrowUpRight
+                            size={13}
+                            color="rgba(222,219,200,0.3)"
+                            className="flex-shrink-0 mt-0.5 group-hover:text-[#DEDBC8] transition-colors duration-200"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-[11px] text-gray-500 m-0">{honor.org}</p>
+                        <span className="text-[10px] text-gray-600 font-mono">{honor.year}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </AnimCard>

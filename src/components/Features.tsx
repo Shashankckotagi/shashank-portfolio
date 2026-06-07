@@ -249,10 +249,12 @@ const INFO_CARDS: InfoCardProps[] = [
     learnMoreLabel: 'Learn more',
     url: '/experience',
     items: [
-      'Treasurer — IEEE Computational Intelligence Society, MSRIT Chapter',
-      'Global Cohort Leader — Harvard Aspire Leaders Program 2025',
-      'TechFest Head \'26 & Director, Theatrix Dramatics Club',
-      'IdeaRise Innovation Challenge winner · 2nd Prize SAGE Hackathon 2024',
+      'Treasurer — IEEE Computational Intelligence Society, MSRIT Chapter (2026–27)',
+      'Global Cohort Leader — Harvard Aspire Leaders Program (2024)',
+      'TechFest Head \'26',
+      'Director — Theatrix Dramatics Club',
+      'IdeaRise Innovation Challenge Winner',
+      '2nd Prize — SAGE Hackathon 2024',
     ],
   },
 ]
