@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Globe, ExternalLink, Mail, ArrowUpRight } from 'lucide-react'
+import { Mail, ArrowUpRight } from 'lucide-react'
+import { GithubIcon, LinkedinIcon } from './SocialIcons'
 
 const QUICK_LINKS = [
   { label: 'About', to: '/about' },
@@ -10,8 +11,8 @@ const QUICK_LINKS = [
 ]
 
 const SOCIAL_LINKS = [
-  { label: 'GitHub', icon: Globe, href: 'https://github.com/shashankckotagi' },
-  { label: 'LinkedIn', icon: ExternalLink, href: 'https://linkedin.com/in/shashankckotagi' },
+  { label: 'GitHub', icon: GithubIcon, href: 'https://github.com/shashankckotagi' },
+  { label: 'LinkedIn', icon: LinkedinIcon, href: 'https://linkedin.com/in/shashankckotagi' },
   { label: 'Email', icon: Mail, href: 'mailto:shashank@example.com' },
 ]
 

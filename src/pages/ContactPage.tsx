@@ -1,13 +1,14 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Send, Mail, Globe, ExternalLink, MapPin, ArrowUpRight } from 'lucide-react'
+import { Send, Mail, MapPin, ArrowUpRight } from 'lucide-react'
 import WordsPullUpMultiStyle from '../components/WordsPullUpMultiStyle'
+import { GithubIcon, LinkedinIcon } from '../components/SocialIcons'
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const SOCIAL_LINKS = [
-  { label: 'GitHub', icon: Globe, href: 'https://github.com/shashankckotagi', handle: '@shashankckotagi' },
-  { label: 'LinkedIn', icon: ExternalLink, href: 'https://linkedin.com/in/shashankckotagi', handle: '/in/shashankckotagi' },
+  { label: 'GitHub', icon: GithubIcon, href: 'https://github.com/shashankckotagi', handle: '@shashankckotagi' },
+  { label: 'LinkedIn', icon: LinkedinIcon, href: 'https://linkedin.com/in/shashankckotagi', handle: '/in/shashankckotagi' },
   { label: 'Email', icon: Mail, href: 'mailto:shashank@example.com', handle: 'shashank@example.com' },
   { label: 'Location', icon: MapPin, href: '#', handle: 'Bengaluru, India' },
 ]
