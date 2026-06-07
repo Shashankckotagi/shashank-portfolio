@@ -294,7 +294,7 @@ export default function ExperiencePage() {
 
           <AnimCard index={1}>
             <div
-              className="rounded-2xl p-6 sm:p-8"
+              className="rounded-2xl p-6 sm:p-8 mb-4"
               style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
             >
               <div className="flex items-start justify-between gap-4">
@@ -319,6 +319,31 @@ export default function ExperiencePage() {
                 <p className="text-xs text-gray-500 m-0 leading-relaxed">
                   Specializing in Artificial Intelligence and Machine Learning with research focus on quantum computing,
                   graph neural networks, and high-energy physics applications.
+                </p>
+              </div>
+            </div>
+          </AnimCard>
+
+          <AnimCard index={2}>
+            <div
+              className="rounded-2xl p-6 sm:p-8"
+              style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
+                    St. Andrews High School
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
+                    High School Curriculum
+                  </p>
+                  <p className="text-[11px] text-gray-600 m-0">Chinchwad, Pune, India</p>
+                </div>
+              </div>
+
+              <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
+                <p className="text-xs text-gray-500 m-0 leading-relaxed">
+                  Completed foundational secondary school studies with a primary focus on mathematics, physical sciences, and introductory computer applications.
                 </p>
               </div>
             </div>
