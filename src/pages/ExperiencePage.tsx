@@ -56,11 +56,13 @@ const HONORS: Honor[] = [
     title: 'Treasurer — IEEE Computational Intelligence Society',
     org: 'MSRIT Chapter',
     year: '2026–27',
+    logo: '/ieee_logo.png',
   },
   {
     title: 'Global Cohort Leader — Harvard Aspire Leaders Program',
     org: 'Harvard University',
     year: '2024',
+    logo: '/harvard_logo.png',
   },
   {
     title: 'TechFest Head \'26',
