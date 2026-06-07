@@ -72,6 +72,12 @@ const HONORS: Honor[] = [
     logo: '/theatrix_logo.png',
   },
   {
+    title: 'Prize Winner — Shoutout 16.0',
+    org: 'Chiraranga & Theatrix Drama Festival',
+    year: '2026',
+    logo: '/shoutout_logo.png',
+  },
+  {
     title: 'IdeaRise Innovation Challenge Winner',
     org: 'MSRIT',
     year: '2024',

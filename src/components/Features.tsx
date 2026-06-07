@@ -253,6 +253,7 @@ const INFO_CARDS: InfoCardProps[] = [
       'Global Cohort Leader — Harvard Aspire Leaders Program (2024)',
       'TechFest Head \'26',
       'Director — Theatrix Dramatics Club',
+      'Prize Winner — Shoutout 16.0 Theatre Festival (Chiraranga vs Theatrix)',
       'IdeaRise Innovation Challenge Winner',
       '2nd Prize — SAGE Hackathon 2024',
     ],
