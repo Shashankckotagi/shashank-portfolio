@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
 import { Check, ArrowRight, BookOpen, Code2, Trophy } from 'lucide-react'
 import WordsPullUpMultiStyle from './WordsPullUpMultiStyle'
@@ -52,9 +53,22 @@ interface InfoCardProps {
   Icon: React.ElementType
   items: string[]
   learnMoreLabel?: string
+  url?: string
 }
 
-function InfoCard({ index, number, title, Icon, items, learnMoreLabel = 'Explore' }: InfoCardProps) {
+function InfoCard({ index, number, title, Icon, items, learnMoreLabel = 'Explore', url }: InfoCardProps) {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    if (url) {
+      if (url.startsWith('http')) {
+        window.open(url, '_blank', 'noopener,noreferrer')
+      } else {
+        navigate(url)
+      }
+    }
+  }
+
   return (
     <FeatureCard
       index={index}
@@ -90,7 +104,10 @@ function InfoCard({ index, number, title, Icon, items, learnMoreLabel = 'Explore
 
       {/* CTA */}
       <div className="mt-6">
-        <button className="group inline-flex items-center gap-2 text-xs text-[#DEDBC8] bg-transparent border-0 cursor-pointer p-0 hover:gap-3 transition-all duration-200">
+        <button
+          onClick={handleClick}
+          className="group inline-flex items-center gap-2 text-xs text-[#DEDBC8] bg-transparent border-0 cursor-pointer p-0 hover:gap-3 transition-all duration-200"
+        >
           <span>{learnMoreLabel}</span>
           <ArrowRight
             size={13}
@@ -202,6 +219,7 @@ const INFO_CARDS: InfoCardProps[] = [
     title: 'Research & Publications.',
     Icon: BookOpen,
     learnMoreLabel: 'Read papers',
+    url: 'https://ieeexplore.ieee.org/author/947462954820407',
     items: [
       'IEEE 2026 — Substrate Mapping & Cardiac Digital Twin Reconstruction Fidelity',
       'IEEE 2025 — Hybrid Quantum-Classical GNNs for Molecular Property Prediction',
@@ -214,6 +232,7 @@ const INFO_CARDS: InfoCardProps[] = [
     title: 'Key Projects.',
     Icon: Code2,
     learnMoreLabel: 'See all projects',
+    url: 'https://github.com/shashankckotagi',
     items: [
       'Mini HL-LHC Event Classifier — GNN pipeline, 100% F1-score on collision data',
       'Rustling Leaves — AI forest fire detection with IoT sensor streams, 2026 (C++/Python)',
@@ -227,6 +246,7 @@ const INFO_CARDS: InfoCardProps[] = [
     title: 'Leadership & Honors.',
     Icon: Trophy,
     learnMoreLabel: 'Learn more',
+    url: '/experience',
     items: [
       'Treasurer — IEEE Computational Intelligence Society, MSRIT Chapter',
       'Global Cohort Leader — Harvard Aspire Leaders Program 2025',

@@ -12,6 +12,7 @@ interface Publication {
   abstract: string
   tags: string[]
   type: 'paper' | 'grant'
+  url?: string
 }
 
 const PUBLICATIONS: Publication[] = [
@@ -23,6 +24,7 @@ const PUBLICATIONS: Publication[] = [
       'Investigating high-fidelity cardiac digital twin reconstruction using substrate mapping techniques, enabling patient-specific cardiac simulations for personalized medicine applications.',
     tags: ['Digital Twins', 'Cardiac Modeling', 'Substrate Mapping', 'Simulation'],
     type: 'paper',
+    url: 'https://ieeexplore.ieee.org/author/947462954820407',
   },
   {
     year: '2025',
@@ -32,6 +34,7 @@ const PUBLICATIONS: Publication[] = [
       'Proposing a hybrid quantum-classical graph neural network architecture that leverages variational quantum circuits for molecular property prediction, achieving state-of-the-art accuracy on benchmark datasets.',
     tags: ['Quantum ML', 'GNNs', 'Molecular Properties', 'VQC'],
     type: 'paper',
+    url: 'https://ieeexplore.ieee.org/author/947462954820407',
   },
 ]
 
@@ -144,6 +147,11 @@ function PublicationCard({ pub, index }: { pub: Publication; index: number }) {
 
         {/* CTA */}
         <button
+          onClick={() => {
+            if (pub.url) {
+              window.open(pub.url, '_blank', 'noopener,noreferrer')
+            }
+          }}
           className="group/btn inline-flex items-center gap-2 text-xs bg-transparent border-0 cursor-pointer p-0 transition-all duration-200"
           style={{ color: '#DEDBC8' }}
         >
