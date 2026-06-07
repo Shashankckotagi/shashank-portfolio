@@ -64,6 +64,7 @@ const HONORS: Honor[] = [
     title: 'TechFest Head \'26',
     org: 'MSRIT',
     year: '2026',
+    logo: '/techfest_logo.png',
   },
   {
     title: 'Director — Theatrix Dramatics Club',
