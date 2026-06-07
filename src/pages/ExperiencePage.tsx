@@ -11,6 +11,7 @@ interface Role {
   period: string
   description: string
   tags: string[]
+  logo?: string
 }
 
 const ROLES: Role[] = [
@@ -37,6 +38,7 @@ const ROLES: Role[] = [
     description:
       'Contributing to software engineering projects with a focus on code quality, testing, and scalable architecture. Collaborating in agile development cycles.',
     tags: ['JavaScript', 'Docker', 'CI/CD', 'Testing'],
+    logo: '/sage_logo.png',
   },
 ]
 
@@ -73,11 +75,13 @@ const HONORS: Honor[] = [
     title: 'IdeaRise Innovation Challenge Winner',
     org: 'MSRIT',
     year: '2024',
+    logo: '/ecell_logo.png',
   },
   {
     title: '2nd Prize Winner — SAGE Hackathon',
     org: 'SAGE',
     year: '2024',
+    logo: '/sage_logo.png',
   },
 ]
 
