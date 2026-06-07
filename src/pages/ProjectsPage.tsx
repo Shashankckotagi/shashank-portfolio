@@ -34,6 +34,7 @@ const PROJECTS: Project[] = [
     icon: Droplets,
     highlight: 'SIH Winner',
     span: 'normal',
+    link: 'https://github.com/Yashwanth45-jpg/GroundWater_backend',
   },
   {
     title: 'Rustling Leaves (2026)',
@@ -50,6 +51,7 @@ const PROJECTS: Project[] = [
     tags: ['React', 'Web Audio API', 'Node.js', 'CSS'],
     icon: Music,
     span: 'normal',
+    link: 'https://github.com/Shashankckotagi/Msvify',
   },
   {
     title: 'Smart Food Inventory Management',
