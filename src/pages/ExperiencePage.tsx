@@ -326,6 +326,31 @@ export default function ExperiencePage() {
 
           <AnimCard index={2}>
             <div
+              className="rounded-2xl p-6 sm:p-8 mb-4"
+              style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
+                    Abhishek Arts, Science and Commerce Junior College
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
+                    Higher Secondary Schooling (Class 11 & 12)
+                  </p>
+                  <p className="text-[11px] text-gray-600 m-0">2021 – 2023 · Chinchwad, Pune, India</p>
+                </div>
+              </div>
+
+              <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
+                <p className="text-xs text-gray-500 m-0 leading-relaxed">
+                  Completed higher secondary education with specialization in science, mathematics, and computer studies.
+                </p>
+              </div>
+            </div>
+          </AnimCard>
+
+          <AnimCard index={3}>
+            <div
               className="rounded-2xl p-6 sm:p-8"
               style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
             >
