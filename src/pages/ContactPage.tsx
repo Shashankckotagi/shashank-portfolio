@@ -8,7 +8,7 @@ import { GithubIcon, LinkedinIcon } from '../components/SocialIcons'
 
 const SOCIAL_LINKS = [
   { label: 'GitHub', icon: GithubIcon, href: 'https://github.com/shashankckotagi', handle: '@shashankckotagi' },
-  { label: 'LinkedIn', icon: LinkedinIcon, href: 'https://linkedin.com/in/shashankckotagi', handle: '/in/shashankckotagi' },
+  { label: 'LinkedIn', icon: LinkedinIcon, href: 'https://www.linkedin.com/in/shashank-kotagi/', handle: '/in/shashank-kotagi' },
   { label: 'Email', icon: Mail, href: 'mailto:shashank@example.com', handle: 'shashank@example.com' },
   { label: 'Location', icon: MapPin, href: '#', handle: 'Bengaluru, India' },
 ]

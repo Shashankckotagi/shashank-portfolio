@@ -108,7 +108,7 @@ export default function AboutPage() {
             <WordsPullUpMultiStyle
               segments={[
                 { text: 'I am Shashank Kotagi,', className: 'font-normal' },
-                { text: 'a researcher and builder.', className: 'font-serif italic' },
+                { text: 'a researcher, engineer, and creator.', className: 'font-serif italic' },
               ]}
               containerClassName="gap-x-[0.22em] leading-tight justify-start"
               delay={0.15}

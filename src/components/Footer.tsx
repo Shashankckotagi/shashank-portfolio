@@ -12,7 +12,7 @@ const QUICK_LINKS = [
 
 const SOCIAL_LINKS = [
   { label: 'GitHub', icon: GithubIcon, href: 'https://github.com/shashankckotagi' },
-  { label: 'LinkedIn', icon: LinkedinIcon, href: 'https://linkedin.com/in/shashankckotagi' },
+  { label: 'LinkedIn', icon: LinkedinIcon, href: 'https://www.linkedin.com/in/shashank-kotagi/' },
   { label: 'Email', icon: Mail, href: 'mailto:shashank@example.com' },
 ]
 

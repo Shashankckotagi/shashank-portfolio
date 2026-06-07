@@ -36,11 +36,11 @@ export default function About() {
                   className: 'font-normal',
                 },
                 {
-                  text: 'a researcher and builder.',
+                  text: 'a researcher, engineer, and creator.',
                   className: 'font-serif italic',
                 },
                 {
-                  text: 'I work at the edge of quantum ML, high-energy physics, and scalable engineering.',
+                  text: 'I build intelligent software, explore emerging technologies, and pursue ideas that make a lasting impact.',
                   className: 'font-normal',
                 },
               ]}
