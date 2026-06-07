@@ -217,8 +217,8 @@ const INFO_CARDS: InfoCardProps[] = [
     learnMoreLabel: 'See all projects',
     items: [
       'Mini HL-LHC Event Classifier — GNN pipeline, 100% F1-score on collision data',
-      'Rustling Leaves — AI forest fire detection with IoT sensor streams (C++/Python)',
-      'Real-Time Groundwater Evaluation — Smart India Hackathon winning entry, 2024',
+      'Rustling Leaves — AI forest fire detection with IoT sensor streams, 2026 (C++/Python)',
+      'Real-Time Groundwater Evaluation — Smart India Hackathon winning entry, 2025',
       'RIT TechFest \'26 official site + AI Interview Training System',
     ],
   },

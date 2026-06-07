@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
     span: 'wide',
   },
   {
-    title: 'Rustling Leaves',
+    title: 'Rustling Leaves (2026)',
     description:
       'AI-powered forest fire detection system leveraging IoT sensor streams for real-time environmental monitoring. Built with C++ for edge inference and Python for cloud analytics.',
     tags: ['C++', 'Python', 'IoT', 'Computer Vision'],
@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
   {
     title: 'Real-Time Groundwater Evaluation',
     description:
-      'Smart India Hackathon 2024 winning entry. A comprehensive system for real-time groundwater quality assessment using sensor data fusion and machine learning classification.',
+      'Smart India Hackathon 2025 winning entry. A comprehensive system for real-time groundwater quality assessment using sensor data fusion and machine learning classification.',
     tags: ['Python', 'ML', 'IoT', 'Data Engineering'],
     icon: Droplets,
     highlight: 'SIH Winner',
