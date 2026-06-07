@@ -335,9 +335,15 @@ export default function ExperiencePage() {
                     St. Andrews High School
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
-                    High School Curriculum
+                    Secondary Schooling
                   </p>
-                  <p className="text-[11px] text-gray-600 m-0">Chinchwad, Pune, India</p>
+                  <p className="text-[11px] text-gray-600 m-0">2009 – 2021 · Chinchwad, Pune, India</p>
+                </div>
+                <div className="text-right flex-shrink-0">
+                  <p className="text-2xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
+                    89%
+                  </p>
+                  <p className="text-[10px] text-gray-500 m-0 mt-1">10th Board</p>
                 </div>
               </div>
 
