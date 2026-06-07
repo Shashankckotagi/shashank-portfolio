@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Globe, ExternalLink, Cpu, Flame, Droplets, Monitor } from 'lucide-react'
+import { Globe, ExternalLink, Cpu, Flame, Droplets, Music, ClipboardList } from 'lucide-react'
 import WordsPullUpMultiStyle from '../components/WordsPullUpMultiStyle'
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -25,29 +25,37 @@ const PROJECTS: Project[] = [
     span: 'wide',
   },
   {
-    title: 'Rustling Leaves (2026)',
-    description:
-      'AI-powered forest fire detection system leveraging IoT sensor streams for real-time environmental monitoring. Built with C++ for edge inference and Python for cloud analytics.',
-    tags: ['C++', 'Python', 'IoT', 'Computer Vision'],
-    icon: Flame,
-    span: 'normal',
-  },
-  {
     title: 'Real-Time Groundwater Evaluation',
     description:
-      'Smart India Hackathon 2025 winning entry. A comprehensive system for real-time groundwater quality assessment using sensor data fusion and machine learning classification.',
+      'Smart India Hackathon 2025 winning entry. A comprehensive system for real-time groundwater quality and level evaluation leveraging DWLR telemetry, sensor data fusion, and machine learning classification.',
     tags: ['Python', 'ML', 'IoT', 'Data Engineering'],
     icon: Droplets,
     highlight: 'SIH Winner',
     span: 'normal',
   },
   {
-    title: 'RIT TechFest \'26 & AI Interview System',
+    title: 'Rustling Leaves (2026)',
     description:
-      'Official website for Ramaiah Institute\'s TechFest 2026 alongside an AI-powered interview training system using generative models for real-time feedback and assessment.',
-    tags: ['React', 'Node.js', 'GenAI', 'Full-Stack'],
-    icon: Monitor,
-    span: 'wide',
+      'AI-powered forest fire detection system featuring real-time data pipelines and a companion mobile application for instant alerts. Built with C++ for edge inference and Python for cloud analytics.',
+    tags: ['C++', 'Python', 'Mobile App', 'Pipelines'],
+    icon: Flame,
+    span: 'normal',
+  },
+  {
+    title: 'msvify',
+    description:
+      'A high-fidelity Spotify clone web application featuring real-time music streaming, responsive audio playback control, custom playlist curation, and a sleek modern user interface.',
+    tags: ['React', 'Web Audio API', 'Node.js', 'CSS'],
+    icon: Music,
+    span: 'normal',
+  },
+  {
+    title: 'Smart Food Inventory Management',
+    description:
+      'Official web system for managing food inventory. Tracks inventory levels, calculates shelf-life, and triggers automated notifications to optimize supply chain efficiency and reduce food wastage.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Web App'],
+    icon: ClipboardList,
+    span: 'normal',
   },
 ]
 

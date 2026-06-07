@@ -235,9 +235,10 @@ const INFO_CARDS: InfoCardProps[] = [
     url: 'https://github.com/shashankckotagi',
     items: [
       'Mini HL-LHC Event Classifier — GNN pipeline, 100% F1-score on collision data',
-      'Rustling Leaves — AI forest fire detection with IoT sensor streams, 2026 (C++/Python)',
-      'Real-Time Groundwater Evaluation — Smart India Hackathon winning entry, 2025',
-      'RIT TechFest \'26 official site + AI Interview Training System',
+      'Real-Time Groundwater Evaluation — Smart India Hackathon winning entry, 2025 (DWLR telemetry)',
+      'Rustling Leaves (2026) — AI forest fire detection with real-time pipelines & mobile app',
+      'msvify — Spotify clone with music streaming & playlist control',
+      'Smart Food Inventory Management System website',
     ],
   },
   {
