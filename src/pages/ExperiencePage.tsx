@@ -445,7 +445,7 @@ export default function ExperiencePage() {
                         St. Andrews High School
                       </h3>
                       <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
-                        Secondary Schooling
+                        Primary & Secondary Schooling
                       </p>
                       <p className="text-[11px] text-gray-600 m-0">2009 – 2021 · Chinchwad, Pune, India</p>
                     </div>
