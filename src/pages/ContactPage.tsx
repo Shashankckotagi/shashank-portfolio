@@ -38,14 +38,14 @@ const CONTACT_METHODS = [
   {
     label: 'Phone',
     icon: Phone,
-    href: 'tel:+91XXXXXXXXXX',
-    value: '+91 XXXXX XXXXX',
+    href: 'tel:+919371342742',
+    value: '+91 93713 42742',
     actionText: 'Call',
   },
   {
     label: 'Location',
     icon: MapPin,
-    href: 'https://maps.google.com/?q=Bengaluru,India',
+    href: 'https://www.google.com/maps/search/ramaiah/@13.0215788,77.5504773,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D',
     value: 'Bengaluru, India',
     actionText: 'View Map',
   },
