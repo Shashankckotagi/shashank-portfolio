@@ -51,6 +51,7 @@ interface Honor {
   org: string
   year: string
   logo?: string
+  link?: string
 }
 
 const HONORS: Honor[] = [
@@ -83,6 +84,7 @@ const HONORS: Honor[] = [
     org: 'Chiraranga & Theatrix Drama Festival',
     year: '2026',
     logo: '/shoutout_logo.png',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7435704513941921793/',
   },
   {
     title: 'IdeaRise Innovation Challenge Winner',
@@ -490,46 +492,72 @@ export default function ExperiencePage() {
           </AnimCard>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {HONORS.map((honor, i) => (
-              <AnimCard key={honor.title} index={i + 1}>
-                <div
-                  className="group rounded-2xl p-5 sm:p-6 h-full transition-all duration-300"
-                  style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = 'rgba(222,219,200,0.12)'
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'rgba(222,219,200,0.06)'
-                  }}
-                >
-                  <div className="flex gap-3.5 items-start h-full">
-                    {honor.logo && (
-                      <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-1">
-                        <img src={honor.logo} alt={`${honor.title} Logo`} className="w-full h-full object-contain" />
+            {HONORS.map((honor, i) => {
+              const CardContent = (
+                <div className="flex gap-3.5 items-start h-full">
+                  {honor.logo && (
+                    <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-1">
+                      <img src={honor.logo} alt={`${honor.title} Logo`} className="w-full h-full object-contain" />
+                    </div>
+                  )}
+                  <div className="flex-grow min-w-0 flex flex-col justify-between min-h-[40px]">
+                    <div>
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <h4 className="text-sm font-medium m-0 leading-snug" style={{ color: '#E1E0CC' }}>
+                          {honor.title}
+                        </h4>
+                        <ArrowUpRight
+                          size={13}
+                          color="rgba(222,219,200,0.3)"
+                          className="flex-shrink-0 mt-0.5 group-hover:text-[#DEDBC8] transition-colors duration-200"
+                        />
                       </div>
-                    )}
-                    <div className="flex-grow min-w-0 flex flex-col justify-between min-h-[40px]">
-                      <div>
-                        <div className="flex items-start justify-between gap-2 mb-2">
-                          <h4 className="text-sm font-medium m-0 leading-snug" style={{ color: '#E1E0CC' }}>
-                            {honor.title}
-                          </h4>
-                          <ArrowUpRight
-                            size={13}
-                            color="rgba(222,219,200,0.3)"
-                            className="flex-shrink-0 mt-0.5 group-hover:text-[#DEDBC8] transition-colors duration-200"
-                          />
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between gap-2">
-                        <p className="text-[11px] text-gray-500 m-0">{honor.org}</p>
-                        <span className="text-[10px] text-gray-600 font-mono">{honor.year}</span>
-                      </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="text-[11px] text-gray-500 m-0">{honor.org}</p>
+                      <span className="text-[10px] text-gray-600 font-mono">{honor.year}</span>
                     </div>
                   </div>
                 </div>
-              </AnimCard>
-            ))}
+              )
+
+              return (
+                <AnimCard key={honor.title} index={i + 1}>
+                  {honor.link ? (
+                    <a
+                      href={honor.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block no-underline rounded-2xl p-5 sm:p-6 h-full transition-all duration-300"
+                      style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.borderColor = 'rgba(222,219,200,0.12)'
+                        e.currentTarget.style.background = '#131313'
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.borderColor = 'rgba(222,219,200,0.06)'
+                        e.currentTarget.style.background = '#101010'
+                      }}
+                    >
+                      {CardContent}
+                    </a>
+                  ) : (
+                    <div
+                      className="group rounded-2xl p-5 sm:p-6 h-full transition-all duration-300"
+                      style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.borderColor = 'rgba(222,219,200,0.12)'
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.borderColor = 'rgba(222,219,200,0.06)'
+                      }}
+                    >
+                      {CardContent}
+                    </div>
+                  )}
+                </AnimCard>
+              )
+            })}
           </div>
         </div>
       </section>
