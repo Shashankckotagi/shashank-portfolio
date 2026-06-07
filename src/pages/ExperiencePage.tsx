@@ -31,7 +31,7 @@ const ROLES: Role[] = [
     period: 'Mar 2026 – Jun 2026',
     description:
       'Developing full-stack web applications with modern frameworks. Implementing responsive UIs and RESTful APIs for production-grade products.',
-    tags: ['React', 'Node.js', 'MongoDB', 'TypeScript'],
+    tags: ['React', 'Node.js', 'MongoDB', 'JavaScript'],
     link: 'https://github.com/Sovely-fresher-batch5/sovely-ecommerce',
     logo: '/sovely_logo.png',
   },
@@ -548,15 +548,18 @@ export default function ExperiencePage() {
               <p className="text-xs sm:text-sm text-gray-500 m-0 mb-6">
                 Download my complete CV for a detailed overview of my experience and skills.
               </p>
-              <button
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium border-0 cursor-pointer transition-all duration-200"
+              <a
+                href="https://drive.google.com/file/d/1MDi4i85SIiYC5LcE3RoB6Mv1wo-Kb_Pw/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium border-0 cursor-pointer transition-all duration-200 no-underline"
                 style={{ background: '#DEDBC8', color: '#000' }}
                 onMouseEnter={(e) => (e.currentTarget.style.background = '#f0edd8')}
                 onMouseLeave={(e) => (e.currentTarget.style.background = '#DEDBC8')}
               >
                 <span>Download CV</span>
                 <ArrowUpRight size={14} />
-              </button>
+              </a>
             </div>
           </AnimCard>
         </div>
