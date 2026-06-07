@@ -17,7 +17,7 @@ const ROLES: Role[] = [
   {
     company: 'Rezorce',
     role: 'Data Engineer Intern',
-    period: 'Feb 2026 – Present',
+    period: 'Feb 2026 – May 2026',
     description:
       'Building data pipelines and ETL workflows for scalable analytics infrastructure. Working with large-scale datasets and cloud-native data processing tools.',
     tags: ['Python', 'SQL', 'Data Pipelines', 'AWS'],
@@ -25,7 +25,7 @@ const ROLES: Role[] = [
   {
     company: 'Sovely',
     role: 'Full-Stack Developer Intern',
-    period: 'Jan 2026 – May 2026',
+    period: 'Mar 2026 – Jun 2026',
     description:
       'Developing full-stack web applications with modern frameworks. Implementing responsive UIs and RESTful APIs for production-grade products.',
     tags: ['React', 'Node.js', 'MongoDB', 'TypeScript'],
@@ -33,7 +33,7 @@ const ROLES: Role[] = [
   {
     company: 'SAGE',
     role: 'Software Engineering Intern',
-    period: 'Jul 2025 – Jan 2026',
+    period: 'Jul 2025 – Present',
     description:
       'Contributing to software engineering projects with a focus on code quality, testing, and scalable architecture. Collaborating in agile development cycles.',
     tags: ['JavaScript', 'Docker', 'CI/CD', 'Testing'],

@@ -127,9 +127,9 @@ function ExperienceHeroCard() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const roles = [
-    { company: 'Rezorce', role: 'Data Engineer Intern', period: 'Feb 2026 – Present' },
-    { company: 'Sovely', role: 'Full-Stack Developer Intern', period: 'Jan 2026 – May 2026' },
-    { company: 'SAGE', role: 'Software Engineering Intern', period: 'Jul 2025 – Jan 2026' },
+    { company: 'Rezorce', role: 'Data Engineer Intern', period: 'Feb 2026 – May 2026' },
+    { company: 'Sovely', role: 'Full-Stack Developer Intern', period: 'Mar 2026 – Jun 2026' },
+    { company: 'SAGE', role: 'Software Engineering Intern', period: 'Jul 2025 – Present' },
   ]
 
   return (
