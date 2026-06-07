@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
-import { GraduationCap, MapPin, Sparkles, Brain, Atom, Server } from 'lucide-react'
+import { MapPin, Sparkles, Brain, Atom, Server } from 'lucide-react'
 import WordsPullUpMultiStyle from '../components/WordsPullUpMultiStyle'
 import AnimatedParagraph from '../components/AnimatedParagraph'
 
@@ -143,10 +143,10 @@ export default function AboutPage() {
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center"
+                    className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-0.5"
                     style={{ background: 'rgba(222,219,200,0.08)' }}
                   >
-                    <GraduationCap size={18} color="#DEDBC8" strokeWidth={1.5} />
+                    <img src="/ramaiah_logo.png" alt="Ramaiah Logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <p className="text-sm font-medium m-0" style={{ color: '#E1E0CC' }}>

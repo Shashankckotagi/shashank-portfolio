@@ -297,29 +297,39 @@ export default function ExperiencePage() {
               className="rounded-2xl p-6 sm:p-8 mb-4"
               style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
-                    MS Ramaiah Institute of Technology
-                  </h3>
-                  <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
-                    B.Tech Computer Science & Engineering (AIML)
-                  </p>
-                  <p className="text-[11px] text-gray-600 m-0">6th Semester · Bengaluru, India</p>
+              <div className="flex items-start gap-4 sm:gap-5">
+                {/* Logo */}
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-1">
+                  <img src="/ramaiah_logo.png" alt="Ramaiah Logo" className="w-full h-full object-contain" />
                 </div>
-                <div className="text-right flex-shrink-0">
-                  <p className="text-2xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
-                    9.18
-                  </p>
-                  <p className="text-[10px] text-gray-500 m-0 mt-1">CGPA</p>
-                </div>
-              </div>
 
-              <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
-                <p className="text-xs text-gray-500 m-0 leading-relaxed">
-                  Specializing in Artificial Intelligence and Machine Learning with research focus on quantum computing,
-                  graph neural networks, and high-energy physics applications.
-                </p>
+                {/* Content */}
+                <div className="flex-grow min-w-0">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
+                        MS Ramaiah Institute of Technology
+                      </h3>
+                      <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
+                        B.Tech Computer Science & Engineering (AIML)
+                      </p>
+                      <p className="text-[11px] text-gray-600 m-0">6th Semester · Bengaluru, India</p>
+                    </div>
+                    <div className="text-right flex-shrink-0">
+                      <p className="text-2xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
+                        9.18
+                      </p>
+                      <p className="text-[10px] text-gray-500 m-0 mt-1">CGPA</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
+                    <p className="text-xs text-gray-500 m-0 leading-relaxed">
+                      Specializing in Artificial Intelligence and Machine Learning with research focus on quantum computing,
+                      graph neural networks, and high-energy physics applications.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </AnimCard>
@@ -329,22 +339,32 @@ export default function ExperiencePage() {
               className="rounded-2xl p-6 sm:p-8 mb-4"
               style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
-                    Abhishek Arts, Science and Commerce Junior College
-                  </h3>
-                  <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
-                    Higher Secondary Schooling (Class 11 & 12)
-                  </p>
-                  <p className="text-[11px] text-gray-600 m-0">2021 – 2023 · Chinchwad, Pune, India</p>
+              <div className="flex items-start gap-4 sm:gap-5">
+                {/* Logo */}
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-1">
+                  <img src="/abhishek_logo.png" alt="Abhishek College Logo" className="w-full h-full object-contain" />
                 </div>
-              </div>
 
-              <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
-                <p className="text-xs text-gray-500 m-0 leading-relaxed">
-                  Completed higher secondary education with specialization in science, mathematics, and computer studies.
-                </p>
+                {/* Content */}
+                <div className="flex-grow min-w-0">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
+                        Abhishek Arts, Science and Commerce Junior College
+                      </h3>
+                      <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
+                        Higher Secondary Schooling (Class 11 & 12)
+                      </p>
+                      <p className="text-[11px] text-gray-600 m-0">2021 – 2023 · Chinchwad, Pune, India</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
+                    <p className="text-xs text-gray-500 m-0 leading-relaxed">
+                      Completed higher secondary education with specialization in science, mathematics, and computer studies.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </AnimCard>
@@ -354,28 +374,38 @@ export default function ExperiencePage() {
               className="rounded-2xl p-6 sm:p-8"
               style={{ background: '#101010', border: '1px solid rgba(222,219,200,0.06)' }}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
-                    St. Andrews High School
-                  </h3>
-                  <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
-                    Secondary Schooling
-                  </p>
-                  <p className="text-[11px] text-gray-600 m-0">2009 – 2021 · Chinchwad, Pune, India</p>
+              <div className="flex items-start gap-4 sm:gap-5">
+                {/* Logo */}
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-1">
+                  <img src="/st_andrews_logo.png" alt="St. Andrews Logo" className="w-full h-full object-contain" />
                 </div>
-                <div className="text-right flex-shrink-0">
-                  <p className="text-2xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
-                    89%
-                  </p>
-                  <p className="text-[10px] text-gray-500 m-0 mt-1">10th Board</p>
-                </div>
-              </div>
 
-              <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
-                <p className="text-xs text-gray-500 m-0 leading-relaxed">
-                  Completed foundational secondary school studies with a primary focus on mathematics, physical sciences, and introductory computer applications.
-                </p>
+                {/* Content */}
+                <div className="flex-grow min-w-0">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-base sm:text-lg font-medium m-0 mb-1" style={{ color: '#E1E0CC' }}>
+                        St. Andrews High School
+                      </h3>
+                      <p className="text-xs sm:text-sm text-gray-500 m-0 mb-1">
+                        Secondary Schooling
+                      </p>
+                      <p className="text-[11px] text-gray-600 m-0">2009 – 2021 · Chinchwad, Pune, India</p>
+                    </div>
+                    <div className="text-right flex-shrink-0">
+                      <p className="text-2xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
+                        89%
+                      </p>
+                      <p className="text-[10px] text-gray-500 m-0 mt-1">10th Board</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 pt-5" style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}>
+                    <p className="text-xs text-gray-500 m-0 leading-relaxed">
+                      Completed foundational secondary school studies with a primary focus on mathematics, physical sciences, and introductory computer applications.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </AnimCard>
