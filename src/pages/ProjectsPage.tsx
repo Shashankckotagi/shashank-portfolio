@@ -12,6 +12,7 @@ interface Project {
   icon: React.ElementType
   highlight?: string
   span?: 'wide' | 'normal'
+  link?: string
 }
 
 const PROJECTS: Project[] = [
@@ -23,6 +24,7 @@ const PROJECTS: Project[] = [
     icon: Cpu,
     highlight: '100% F1',
     span: 'wide',
+    link: 'https://github.com/Shashankckotagi/mini-lhc-gnn-classifier',
   },
   {
     title: 'Real-Time Groundwater Evaluation',
@@ -166,7 +168,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         {/* Links */}
         <div className="relative z-10 flex items-center gap-4">
           <a
-            href="https://github.com/shashankckotagi"
+            href={project.link || "https://github.com/shashankckotagi"}
             target="_blank"
             rel="noopener noreferrer"
             className="group/btn inline-flex items-center gap-1.5 text-xs no-underline bg-transparent border-0 cursor-pointer p-0 transition-all duration-200"
