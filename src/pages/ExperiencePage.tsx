@@ -25,7 +25,7 @@ const ROLES: Role[] = [
   {
     company: 'Sovely',
     role: 'Full-Stack Developer Intern',
-    period: 'Early 2026 – Present',
+    period: 'Jan 2026 – May 2026',
     description:
       'Developing full-stack web applications with modern frameworks. Implementing responsive UIs and RESTful APIs for production-grade products.',
     tags: ['React', 'Node.js', 'MongoDB', 'TypeScript'],
@@ -33,7 +33,7 @@ const ROLES: Role[] = [
   {
     company: 'SAGE',
     role: 'Software Engineering Intern',
-    period: 'Jul 2025 – Present',
+    period: 'Jul 2025 – Jan 2026',
     description:
       'Contributing to software engineering projects with a focus on code quality, testing, and scalable architecture. Collaborating in agile development cycles.',
     tags: ['JavaScript', 'Docker', 'CI/CD', 'Testing'],
@@ -199,7 +199,7 @@ export default function ExperiencePage() {
           >
             <WordsPullUpMultiStyle
               segments={[
-                { text: '3 concurrent roles.', className: 'font-normal' },
+                { text: '3 professional internships.', className: 'font-normal' },
                 { text: 'Relentless growth.', className: 'font-serif italic' },
               ]}
               containerClassName="gap-x-[0.22em] leading-tight justify-start"
@@ -225,7 +225,7 @@ export default function ExperiencePage() {
               <p className="text-2xl sm:text-3xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
                 3
               </p>
-              <p className="text-[10px] text-gray-500 m-0 mt-1">Active internships</p>
+              <p className="text-[10px] text-gray-500 m-0 mt-1">Internships (1 active)</p>
             </div>
             <div className="w-px h-10" style={{ background: 'rgba(222,219,200,0.1)' }} />
             <div>

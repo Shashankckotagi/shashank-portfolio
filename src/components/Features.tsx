@@ -128,8 +128,8 @@ function ExperienceHeroCard() {
 
   const roles = [
     { company: 'Rezorce', role: 'Data Engineer Intern', period: 'Feb 2026 – Present' },
-    { company: 'Sovely', role: 'Full-Stack Developer Intern', period: 'Early 2026 – Present' },
-    { company: 'SAGE', role: 'Software Engineering Intern', period: 'Jul 2025 – Present' },
+    { company: 'Sovely', role: 'Full-Stack Developer Intern', period: 'Jan 2026 – May 2026' },
+    { company: 'SAGE', role: 'Software Engineering Intern', period: 'Jul 2025 – Jan 2026' },
   ]
 
   return (
@@ -160,7 +160,7 @@ function ExperienceHeroCard() {
             >
               Experience
             </p>
-            <p className="text-[10px] sm:text-xs text-gray-500 m-0">3 concurrent roles</p>
+            <p className="text-[10px] sm:text-xs text-gray-500 m-0">3 internships (1 active)</p>
           </div>
           <div className="text-right">
             <p
