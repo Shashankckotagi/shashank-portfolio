@@ -107,7 +107,6 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(222,219,200,0.06)' }}
         >
           <p className="text-[11px] text-gray-600 m-0">© 2026 Shashank Kotagi. All rights reserved.</p>
-          <p className="text-[11px] text-gray-700 m-0">Built with React + Vite</p>
         </div>
       </div>
     </footer>

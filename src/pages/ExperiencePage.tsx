@@ -12,6 +12,7 @@ interface Role {
   description: string
   tags: string[]
   logo?: string
+  link?: string
 }
 
 const ROLES: Role[] = [
@@ -30,6 +31,7 @@ const ROLES: Role[] = [
     description:
       'Developing full-stack web applications with modern frameworks. Implementing responsive UIs and RESTful APIs for production-grade products.',
     tags: ['React', 'Node.js', 'MongoDB', 'TypeScript'],
+    link: 'https://github.com/Sovely-fresher-batch5/sovely-ecommerce',
   },
   {
     company: 'SAGE',
@@ -154,16 +156,38 @@ function RoleCard({ role, index }: { role: Role; index: number }) {
           }}
         >
           {/* Header */}
-          <div className="flex items-start justify-between gap-3 mb-3">
-            <div>
-              <h3 className="text-base sm:text-lg font-medium m-0 leading-snug" style={{ color: '#E1E0CC' }}>
-                {role.company}
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-500 m-0 mt-0.5">{role.role}</p>
-            </div>
-            <div className="flex items-center gap-1.5 flex-shrink-0">
-              <Calendar size={11} color="rgba(222,219,200,0.4)" />
-              <span className="text-[10px] sm:text-xs text-gray-600 whitespace-nowrap">{role.period}</span>
+          <div className="flex items-start gap-3.5 mb-3">
+            {role.logo && (
+              <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden flex-shrink-0 border border-white/10 p-0.5">
+                <img src={role.logo} alt={`${role.company} Logo`} className="w-full h-full object-contain" />
+              </div>
+            )}
+            <div className="flex-grow min-w-0">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <h3 className="text-base sm:text-lg font-medium m-0 leading-snug flex items-center gap-1.5" style={{ color: '#E1E0CC' }}>
+                    {role.link ? (
+                      <a
+                        href={role.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline flex items-center gap-1.5"
+                        style={{ color: '#E1E0CC', textDecoration: 'none' }}
+                      >
+                        {role.company}
+                        <ArrowUpRight size={14} className="text-gray-500 hover:text-[#DEDBC8] flex-shrink-0" />
+                      </a>
+                    ) : (
+                      role.company
+                    )}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-500 m-0 mt-0.5">{role.role}</p>
+                </div>
+                <div className="flex items-center gap-1.5 flex-shrink-0">
+                  <Calendar size={11} color="rgba(222,219,200,0.4)" />
+                  <span className="text-[10px] sm:text-xs text-gray-600 whitespace-nowrap">{role.period}</span>
+                </div>
+              </div>
             </div>
           </div>
 
