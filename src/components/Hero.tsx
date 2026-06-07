@@ -99,8 +99,8 @@ export default function Hero() {
         {/* Gradient overlay */}
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
 
-        {/* Navbar — pill hanging from top */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-30">
+        {/* Navbar — pill hanging from top (hidden on mobile, visible on desktop) */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-30 hidden md:block">
           <nav className="bg-black rounded-b-2xl md:rounded-b-3xl px-4 py-2.5 md:px-8 md:py-3">
             <ul className="flex items-center gap-3 sm:gap-6 md:gap-10 lg:gap-12 list-none m-0 p-0">
               {NAV_ITEMS.map((item) => (
@@ -123,7 +123,7 @@ export default function Hero() {
         {/* Hero content — bottom aligned */}
         <div
           ref={contentRef}
-          className="absolute bottom-0 left-0 right-0 z-20 grid grid-cols-12 items-end px-4 pb-16 md:px-6 md:pb-20"
+          className="absolute bottom-0 left-0 right-0 z-20 grid grid-cols-12 items-end px-4 pb-16 md:px-6 md:pb-20 gap-y-6 lg:gap-y-0"
         >
           {/* Left — giant name */}
           <div className="col-span-12 lg:col-span-8">

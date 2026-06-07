@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useLocation, NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
@@ -13,11 +13,34 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isHome
+            ? scrolled
+              ? 'translate-y-0 opacity-100'
+              : 'md:-translate-y-full md:opacity-0'
+            : 'translate-y-0 opacity-100'
+        }`}
         style={{
           background: 'rgba(0, 0, 0, 0.6)',
           backdropFilter: 'blur(20px)',

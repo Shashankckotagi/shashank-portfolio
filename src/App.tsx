@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Features from './components/Features'
@@ -13,6 +14,7 @@ import ContactPage from './pages/ContactPage'
 function HomePage() {
   return (
     <div style={{ background: '#000', minHeight: '100vh' }}>
+      <Navbar />
       <Hero />
       <About />
       <Features />
