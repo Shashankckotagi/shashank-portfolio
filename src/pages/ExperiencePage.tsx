@@ -218,21 +218,21 @@ export default function ExperiencePage() {
               <p className="text-2xl sm:text-3xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
                 9.18
               </p>
-              <p className="text-[10px] text-gray-500 m-0 mt-1">CGPA / 10</p>
+              <p className="text-[10px] text-gray-500 m-0 mt-1 whitespace-nowrap">CGPA / 10</p>
             </div>
             <div className="w-px h-10" style={{ background: 'rgba(222,219,200,0.1)' }} />
             <div>
               <p className="text-2xl sm:text-3xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
                 3
               </p>
-              <p className="text-[10px] text-gray-500 m-0 mt-1">Internships (1 active)</p>
+              <p className="text-[10px] text-gray-500 m-0 mt-1 whitespace-nowrap">Internships (1 active)</p>
             </div>
             <div className="w-px h-10" style={{ background: 'rgba(222,219,200,0.1)' }} />
             <div>
               <p className="text-2xl sm:text-3xl font-medium m-0 leading-none" style={{ color: '#E1E0CC' }}>
                 2+
               </p>
-              <p className="text-[10px] text-gray-500 m-0 mt-1">IEEE papers</p>
+              <p className="text-[10px] text-gray-500 m-0 mt-1 whitespace-nowrap">IEEE papers</p>
             </div>
           </motion.div>
 
