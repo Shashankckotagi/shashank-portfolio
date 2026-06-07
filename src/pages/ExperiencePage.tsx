@@ -23,6 +23,7 @@ const ROLES: Role[] = [
     description:
       'Building data pipelines and ETL workflows for scalable analytics infrastructure. Working with large-scale datasets and cloud-native data processing tools.',
     tags: ['Python', 'SQL', 'Data Pipelines', 'AWS'],
+    logo: '/rezorce_logo.png',
   },
   {
     company: 'Sovely',
@@ -32,6 +33,7 @@ const ROLES: Role[] = [
       'Developing full-stack web applications with modern frameworks. Implementing responsive UIs and RESTful APIs for production-grade products.',
     tags: ['React', 'Node.js', 'MongoDB', 'TypeScript'],
     link: 'https://github.com/Sovely-fresher-batch5/sovely-ecommerce',
+    logo: '/sovely_logo.png',
   },
   {
     company: 'SAGE',
