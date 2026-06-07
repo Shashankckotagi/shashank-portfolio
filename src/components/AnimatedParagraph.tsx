@@ -25,7 +25,7 @@ function AnimatedLetter({ char, index, total, scrollYProgress }: AnimatedLetterP
 
   return (
     <motion.span style={{ opacity, display: 'inline' }}>
-      {char === ' ' ? '\u00A0' : char}
+      {char}
     </motion.span>
   )
 }

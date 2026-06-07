@@ -33,15 +33,6 @@ const PUBLICATIONS: Publication[] = [
     tags: ['Quantum ML', 'GNNs', 'Molecular Properties', 'VQC'],
     type: 'paper',
   },
-  {
-    year: '2026',
-    title: 'IEEE CIS Graduate Research Grant — HL-LHC Trigger Pipelines',
-    venue: 'IEEE Computational Intelligence Society · $3,500',
-    abstract:
-      'Grant application for developing intelligent trigger pipeline systems for the High-Luminosity Large Hadron Collider (HL-LHC), using graph neural networks to process collision event data in real-time.',
-    tags: ['HEP', 'HL-LHC', 'Trigger Systems', 'Real-Time ML'],
-    type: 'grant',
-  },
 ]
 
 const RESEARCH_AREAS = [

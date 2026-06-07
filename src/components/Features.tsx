@@ -205,7 +205,6 @@ const INFO_CARDS: InfoCardProps[] = [
     items: [
       'IEEE 2026 — Substrate Mapping & Cardiac Digital Twin Reconstruction Fidelity',
       'IEEE 2025 — Hybrid Quantum-Classical GNNs for Molecular Property Prediction',
-      'IEEE CIS Graduate Research Grant applicant — $3,500 · HL-LHC trigger pipelines',
       'Supervised by Dr. Sumana Maradithaya, MSRIT',
     ],
   },
